@@ -1,4 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+}
+
+#content {
+    display: grid;
+    place-items: center;
+    order: 2;
+}
+
 .banner {
     width: 100vw;
     height: auto;
+}
+
+h1 {
+    position: fixed;   
+    place-self: center;
+    color: white;
+}
+
+#header {
+    display: grid;
+    position: relative;
+    order: 1;
+
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    color: white;
+    gap: 1rem;
+
+    position: absolute;
+    bottom: 1rem;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#header button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(79, 212, 146);
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    width: 10rem;
+    height: 5rem;
 }

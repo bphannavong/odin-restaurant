@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".banner {\n    width: 100vw;\n    height: auto;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,YAAY;AAChB","sourcesContent":[".banner {\n    width: 100vw;\n    height: auto;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n.banner {\n    width: 100vw;\n    height: auto;\n}\n\nh1 {\n    position: fixed;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,QAAQ;;AAEZ;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,mBAAmB;IACnB,YAAY;IACZ,SAAS;;IAET,kBAAkB;IAClB,YAAY;IACZ,UAAU;IACV,yBAAyB;AAC7B;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mCAAmC;IACnC,iBAAiB;IACjB,iBAAiB;;IAEjB,YAAY;IACZ,YAAY;AAChB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n.banner {\n    width: 100vw;\n    height: auto;\n}\n\nh1 {\n    position: fixed;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -543,23 +543,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/pho-banner.jpg */ "./src/assets/pho-banner.jpg");
 
 
-const components = [];
-const div = document.createElement('div');
-const restaurantImg = document.createElement('img');
-    
-div.innerHTML = 'hey';
+const headComponents = [];
+const components = []; //components to add to page
 
-restaurantImg.src = _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__;
-restaurantImg.classList.add('banner');
+const welcome = document.createElement('h1');
+const nav = document.createElement('div');
+const banner = document.createElement('img');
+const hero = document.createElement('div');
 
-components.push(div);
-components.push(restaurantImg);
+
+welcome.innerHTML = 'Welcome to Pho Restaurant!'
+
+banner.src = _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__;
+banner.classList.add('banner');
+
+//nav-bar elements
+nav.classList.add('nav-bar');
+const home = document.createElement('button');
+const menu = document.createElement('button');
+const contact = document.createElement('button');
+
+home.innerHTML = 'HOME';
+menu.innerHTML = 'MENU';
+contact.innerHTML = 'CONTACT';
+
+nav.appendChild(home);
+nav.appendChild(menu);
+nav.appendChild(contact);
+
+hero.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+headComponents.push(banner);
+headComponents.push(welcome);
+headComponents.push(nav);
+components.push(hero);
 
 function renderPage() {
+    const main = document.querySelector('main')
     const content = document.getElementById('content');
+    const header = document.createElement('div');
+    header.setAttribute('id', 'header');
+
+    for (const element of headComponents) {
+        header.appendChild(element);
+    }
     for (const element of components) {
         content.appendChild(element);
     }
+
+    main.appendChild(header);
 }
 
 
@@ -700,4 +732,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle7316950bde49bec7233c.js.map
+//# sourceMappingURL=bundle74aa0259f35f246d5dac.js.map
