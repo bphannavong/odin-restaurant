@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles.css":
@@ -8,6 +7,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -26,7 +26,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n    grid-template-rows: 1fr 1fr;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n#header {\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n.nav-bar button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n.nav-bar button.selected {\n    text-decoration: underline;\n}\n\n#content div:first-child { \n    display: grid;\n    place-items: start;\n    border: none;\n    border-radius: 10px;\n    background-color: lightgray;\n\n    width: 60vw;\n    padding: 1rem 5rem;\n}\n\n", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,mDAA0C;IAC1C,4BAA4B;IAC5B,sBAAsB;IACtB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,kBAAkB;IAClB,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,QAAQ;;AAEZ;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,mBAAmB;IACnB,YAAY;IACZ,SAAS;;IAET,kBAAkB;IAClB,YAAY;IACZ,UAAU;IACV,yBAAyB;AAC7B;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mCAAmC;IACnC,iBAAiB;IACjB,iBAAiB;;IAEjB,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,mBAAmB;IACnB,2BAA2B;;IAE3B,WAAW;IACX,kBAAkB;AACtB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n    grid-template-rows: 1fr 1fr;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n#header {\n    background: url('./assets/pho-banner.jpg');\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n.nav-bar button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n.nav-bar button.selected {\n    text-decoration: underline;\n}\n\n#content div:first-child { \n    display: grid;\n    place-items: start;\n    border: none;\n    border-radius: 10px;\n    background-color: lightgray;\n\n    width: 60vw;\n    padding: 1rem 5rem;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    margin: 1rem;\n}\n\n#header {\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n.nav-bar button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n.nav-bar button.selected {\n    text-decoration: underline;\n}\n\n#content > div:first-child { \n    display: grid;\n    place-items: center;\n    border: none;\n    border-radius: 10px;\n    background-color: lightgray;\n    gap: 1rem;\n    width: 60vw;\n    padding: 1rem 5rem;\n}\n\n/* Menu Content */\n\n#item-cards {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n    place-items: center;\n    place-content: center;\n    width: 80%;\n    grid-gap: 2rem;\n} \n\n.card {\n    border: 1px solid black;\n    border-radius: 10px;\n    margin: 1rem;\n    padding: 2rem;\n    width: 15rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,mDAA0C;IAC1C,4BAA4B;IAC5B,sBAAsB;IACtB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,kBAAkB;IAClB,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,mBAAmB;IACnB,YAAY;IACZ,SAAS;;IAET,kBAAkB;IAClB,YAAY;IACZ,UAAU;IACV,yBAAyB;AAC7B;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mCAAmC;IACnC,iBAAiB;IACjB,iBAAiB;;IAEjB,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,mBAAmB;IACnB,2BAA2B;IAC3B,SAAS;IACT,WAAW;IACX,kBAAkB;AACtB;;AAEA,iBAAiB;;AAEjB;IACI,aAAa;IACb,4DAA4D;IAC5D,mBAAmB;IACnB,qBAAqB;IACrB,UAAU;IACV,cAAc;AAClB;;AAEA;IACI,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,aAAa;IACb,YAAY;AAChB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    margin: 1rem;\n}\n\n#header {\n    background: url('./assets/pho-banner.jpg');\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n.nav-bar button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n.nav-bar button.selected {\n    text-decoration: underline;\n}\n\n#content > div:first-child { \n    display: grid;\n    place-items: center;\n    border: none;\n    border-radius: 10px;\n    background-color: lightgray;\n    gap: 1rem;\n    width: 60vw;\n    padding: 1rem 5rem;\n}\n\n/* Menu Content */\n\n#item-cards {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n    place-items: center;\n    place-content: center;\n    width: 80%;\n    grid-gap: 2rem;\n} \n\n.card {\n    border: 1px solid black;\n    border-radius: 10px;\n    margin: 1rem;\n    padding: 2rem;\n    width: 15rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39,6 +39,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -150,6 +151,7 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (url, options) {
@@ -188,6 +190,7 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -219,6 +222,7 @@ module.exports = function (item) {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -273,6 +277,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -386,6 +391,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -434,6 +440,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -454,6 +461,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -475,6 +483,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -554,6 +563,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -573,28 +583,83 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ renderPage)
+/* harmony export */ });
+function renderPage() {
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+    for (const element of components) {
+        content.appendChild(element);
+    }
+}
+
+const components = []; //components to add to page
+
+//Hero/About 
+const hero = document.createElement('div');
+const aboutHeader = document.createElement('h2');
+aboutHeader.innerHTML = 'ABOUT';
+const about = document.createElement('div');
+about.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+hero.appendChild(aboutHeader);
+hero.appendChild(about);
+
+components.push(hero);
+
+
+
+/***/ }),
+
 /***/ "./src/init.js":
 /*!*********************!*\
   !*** ./src/init.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ renderPage)
+/* harmony export */   "default": () => (/* binding */ renderPage),
+/* harmony export */   "tabSwitch": () => (/* binding */ tabSwitch)
 /* harmony export */ });
-const headComponents = []; //components for header section
+/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
+
+
+const components = []; //components for header section
 
 const welcome = document.createElement('h1');
-const nav = document.createElement('div');
-
 welcome.innerHTML = 'Welcome to Pho Restaurant!'
 
 //nav-bar elements
+const nav = document.createElement('div');
 nav.classList.add('nav-bar');
+
 const home = document.createElement('button');
 const menu = document.createElement('button');
 const contact = document.createElement('button');
+
+home.setAttribute('id', 'homeBtn');
+menu.setAttribute('id', 'menuBtn');
+contact.setAttribute('id', 'contactBtn');
 
 home.innerHTML = 'HOME';
 menu.innerHTML = 'MENU';
@@ -604,30 +669,33 @@ nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
 
+//push components
+components.push(welcome);
+components.push(nav);
 
-//home();
-
-//push components to respective arrays
-// headComponents.push(banner);
-headComponents.push(welcome);
-headComponents.push(nav);
-
-
-function renderPage() {
-    document.innerHTML = ''; //create new module for home and ability to change between tabs
-    const main = document.querySelector('main')
+//initial rendering of page
+const header = document.createElement('div');
+const content = document.getElementById('content');
     
-    const header = document.createElement('div');
-    header.setAttribute('id', 'header');
+content.insertAdjacentElement('beforebegin', header);
+header.setAttribute('id', 'header');
 
-    for (const element of headComponents) {
-        header.appendChild(element);
-    }
-    
-    main.appendChild(header);
+for (const element of components) {
+    header.appendChild(element);
 }
 
+function renderPage() {
+    
+}
 
+function tabSwitch(tabBtn) {
+    document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
+    tabBtn.target.classList.add('selected');
+}
+
+function renderHeader() {
+
+}
 
 /***/ }),
 
@@ -637,14 +705,67 @@ function renderPage() {
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ menu)
+/* harmony export */   "default": () => (/* binding */ renderPage)
 /* harmony export */ });
-function menu() {
+function renderPage() {
     const content = document.getElementById('content');
     content.innerHTML = '';
+    for (const element of components) {
+        content.appendChild(element);
+    }
 }
+
+class MenuItem {
+    constructor(name, ingredients) {
+        this.name = name;
+        this.ingredients = ingredients;
+    }
+}
+
+const components = []; //components to add to page
+
+//menu components 
+const menu = document.createElement('div'); //wrapper for menu objects
+const aboutHeader = document.createElement('h2');
+aboutHeader.innerHTML = 'MENU';
+
+//item-card components
+const itemCards = document.createElement('div');
+itemCards.setAttribute('id', 'item-cards');
+
+const dacBiet = new MenuItem('Pho Dac Biet', 'Lorem ipsum dolor sit amet, consectetur.')
+const pho2 = new MenuItem('Pho #2', 'Lorem ipsum dolor sit amet, consectetur.');
+const pho3 = new MenuItem('Pho #3', 'Lorem ipsum dolor sit amet, consectetur.');
+const pho4 = new MenuItem('Pho #4', 'Lorem ipsum dolor sit amet, consectetur.');
+const pho5 = new MenuItem('Pho #5', 'Lorem ipsum dolor sit amet, consectetur.');
+const pho6 = new MenuItem('Pho #6', 'Lorem ipsum dolor sit amet, consectetur.');
+
+const items = [dacBiet, pho2, pho3, pho4, pho5, pho6];
+for (const item of items) {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const itemName = document.createElement('div');
+    const itemIngredients = document.createElement('div');
+
+    itemName.innerHTML = item.name;
+    itemIngredients.innerHTML = item.ingredients;
+
+    card.appendChild(itemName);
+    card.appendChild(itemIngredients);
+
+    itemCards.appendChild(card);
+}
+
+
+menu.appendChild(aboutHeader);
+menu.appendChild(itemCards);
+
+components.push(menu);
+
 
 /***/ }),
 
@@ -654,6 +775,7 @@ function menu() {
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "pho-banner.jpg";
 
 /***/ })
@@ -793,29 +915,40 @@ module.exports = __webpack_require__.p + "pho-banner.jpg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _init_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init.js */ "./src/init.js");
-/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ "./src/menu.js");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
+/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ "./src/menu.js");
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_contact_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
 
 
 
 
-(0,_init_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+
+
+window.onload = (0,_init_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 const home = document.querySelector('.nav-bar button:first-child');
+home.addEventListener('click', _home_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
 home.addEventListener('click', _init_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 const menu = document.querySelector('.nav-bar button:nth-child(2)');
-menu.addEventListener('click', _menu_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+menu.addEventListener('click', _menu_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+menu.addEventListener('click', _init_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
+const contactBtn = document.querySelector('.nav-bar button:last-child');
+contactBtn.addEventListener('click', (_contact_js__WEBPACK_IMPORTED_MODULE_3___default()));
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundleaf549fb30d4cd057e02c.js.map
+//# sourceMappingURL=bundledfbacb0e245bb7cfb7d2.js.map

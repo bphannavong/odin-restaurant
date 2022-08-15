@@ -1,15 +1,21 @@
-const headComponents = []; //components for header section
+import homeRender from './home.js';
+
+const components = []; //components for header section
 
 const welcome = document.createElement('h1');
-const nav = document.createElement('div');
-
 welcome.innerHTML = 'Welcome to Pho Restaurant!'
 
 //nav-bar elements
+const nav = document.createElement('div');
 nav.classList.add('nav-bar');
+
 const home = document.createElement('button');
 const menu = document.createElement('button');
 const contact = document.createElement('button');
+
+home.setAttribute('id', 'homeBtn');
+menu.setAttribute('id', 'menuBtn');
+contact.setAttribute('id', 'contactBtn');
 
 home.innerHTML = 'HOME';
 menu.innerHTML = 'MENU';
@@ -19,26 +25,30 @@ nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
 
+//push components
+components.push(welcome);
+components.push(nav);
 
-//home();
-
-//push components to respective arrays
-// headComponents.push(banner);
-headComponents.push(welcome);
-headComponents.push(nav);
-
-
-export default function renderPage() {
-    document.innerHTML = ''; //create new module for home and ability to change between tabs
-    const main = document.querySelector('main')
+//initial rendering of page
+const header = document.createElement('div');
+const content = document.getElementById('content');
     
-    const header = document.createElement('div');
-    header.setAttribute('id', 'header');
+content.insertAdjacentElement('beforebegin', header);
+header.setAttribute('id', 'header');
 
-    for (const element of headComponents) {
-        header.appendChild(element);
-    }
-    
-    main.appendChild(header);
+for (const element of components) {
+    header.appendChild(element);
 }
 
+export default function renderPage() {
+    
+}
+
+export function tabSwitch(tabBtn) {
+    document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
+    tabBtn.target.classList.add('selected');
+}
+
+function renderHeader() {
+
+}

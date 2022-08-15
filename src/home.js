@@ -1,9 +1,15 @@
+export default function renderPage() {
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+    for (const element of components) {
+        content.appendChild(element);
+    }
+}
+
 const components = []; //components to add to page
 
-const hero = document.createElement('div');
-
-//home.classList.add('selected');
 //Hero/About 
+const hero = document.createElement('div');
 const aboutHeader = document.createElement('h2');
 aboutHeader.innerHTML = 'ABOUT';
 const about = document.createElement('div');
@@ -13,10 +19,3 @@ hero.appendChild(about);
 
 components.push(hero);
 
-
-//fx
-const content = document.getElementById('content');\
-
-for (const element of components) {
-    content.appendChild(element);
-}
