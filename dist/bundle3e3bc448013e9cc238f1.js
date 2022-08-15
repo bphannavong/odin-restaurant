@@ -701,9 +701,10 @@ function renderPage() {
     
 }
 
-function tabSwitch(tabBtn) {
-    document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
-    tabBtn.target.classList.add('selected');
+function tabSwitch(e) {
+    // document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
+    // tabBtn.target.classList.add('selected');
+    console.log(e);
 }
 
 function renderHeader() {
@@ -941,23 +942,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import tabSwitch from './init.js';
 
 
 window.onload = (0,_init_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 const home = document.querySelector('.nav-bar button:first-child');
 home.addEventListener('click', _home_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-home.addEventListener('click', _init_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
+home.addEventListener('click', tabSwitch);
 
 const menu = document.querySelector('.nav-bar button:nth-child(2)');
 menu.addEventListener('click', _menu_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
-menu.addEventListener('click', _init_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
+menu.addEventListener('click', tabSwitch);
 
 const contactBtn = document.querySelector('.nav-bar button:last-child');
 contactBtn.addEventListener('click', _contact_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
+contactBtn.addEventListener('click', tabSwitch);
+
+function tabSwitch(e) {
+    document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
+    e.target.classList.add('selected');
+}
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef2b572e0f472d45efac4.js.map
+//# sourceMappingURL=bundle3e3bc448013e9cc238f1.js.map

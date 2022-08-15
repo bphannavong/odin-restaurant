@@ -44,9 +44,10 @@ export default function renderPage() {
     
 }
 
-export function tabSwitch(tabBtn) {
-    document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
-    tabBtn.target.classList.add('selected');
+export function tabSwitch(e) {
+    // document.querySelectorAll('button').forEach(btn => btn.removeAttribute('class'));
+    // tabBtn.target.classList.add('selected');
+    console.log(e);
 }
 
 function renderHeader() {
