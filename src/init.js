@@ -23,6 +23,8 @@ home.innerHTML = 'HOME';
 menu.innerHTML = 'MENU';
 contact.innerHTML = 'CONTACT';
 
+home.classList.add('selected');
+
 nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
