@@ -583,9 +583,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ renderPage)
 /* harmony export */ });
-/* harmony import */ var _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/pho-banner.jpg */ "./src/assets/pho-banner.jpg");
-
-
 const headComponents = []; //components for header section
 const components = []; //components to add to page
 
@@ -630,6 +627,7 @@ headComponents.push(nav);
 components.push(hero);
 
 function renderPage() {
+    document.innerHTML = ''; //create new module for home and ability to change between tabs
     const main = document.querySelector('main')
     const content = document.getElementById('content');
     const header = document.createElement('div');
@@ -646,6 +644,23 @@ function renderPage() {
 }
 
 
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ menu)
+/* harmony export */ });
+function menu() {
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+}
 
 /***/ }),
 
@@ -801,15 +816,22 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _init_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init.js */ "./src/init.js");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ "./src/menu.js");
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+
 
 
 
 (0,_init_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
+const home = document.querySelector('.nav-bar button:first-child');
+home.addEventListener('click', _init_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+const menu = document.querySelector('.nav-bar button:nth-child(2)');
+menu.addEventListener('click', _menu_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle0afb815926dcaa6abf7e.js.map
+//# sourceMappingURL=bundle6a3396808cf67a0f7fe4.js.map

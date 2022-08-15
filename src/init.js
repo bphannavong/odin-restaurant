@@ -1,5 +1,3 @@
-import phoBanner from './assets/pho-banner.jpg';
-
 const headComponents = []; //components for header section
 const components = []; //components to add to page
 
@@ -44,6 +42,7 @@ headComponents.push(nav);
 components.push(hero);
 
 export default function renderPage() {
+    document.innerHTML = ''; //create new module for home and ability to change between tabs
     const main = document.querySelector('main')
     const content = document.getElementById('content');
     const header = document.createElement('div');
