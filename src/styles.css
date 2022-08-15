@@ -6,6 +6,7 @@
 
 main {
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 #content {
@@ -14,13 +15,16 @@ main {
     order: 2;
 }
 
-.banner {
+#header {
+    background: url('./assets/pho-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
-    height: auto;
+    min-height: 35vh;
 }
 
 h1 {
-    position: fixed;   
+    position: absolute;   
     place-self: center;
     color: white;
 }
@@ -55,4 +59,13 @@ h1 {
 
     width: 10rem;
     height: 5rem;
+}
+
+#content div:first-child { 
+    display: grid;
+    place-items: start;
+    border: 1px solid red;
+
+    width: 50vw;
+    padding: 1rem 5rem;
 }

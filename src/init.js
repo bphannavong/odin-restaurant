@@ -1,18 +1,17 @@
 import phoBanner from './assets/pho-banner.jpg';
 
-const headComponents = [];
+const headComponents = []; //components for header section
 const components = []; //components to add to page
 
 const welcome = document.createElement('h1');
 const nav = document.createElement('div');
-const banner = document.createElement('img');
+//const banner = document.createElement('img');
 const hero = document.createElement('div');
 
 
 welcome.innerHTML = 'Welcome to Pho Restaurant!'
 
-banner.src = phoBanner;
-banner.classList.add('banner');
+//banner.src = phoBanner;
 
 //nav-bar elements
 nav.classList.add('nav-bar');
@@ -28,9 +27,16 @@ nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
 
-hero.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+//Hero/About 
+const aboutHeader = document.createElement('h2');
+aboutHeader.innerHTML = 'ABOUT';
+const about = document.createElement('div');
+about.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+hero.appendChild(aboutHeader);
+hero.appendChild(about);
 
-headComponents.push(banner);
+//push components to respective arrays
+// headComponents.push(banner);
 headComponents.push(welcome);
 headComponents.push(nav);
 components.push(hero);

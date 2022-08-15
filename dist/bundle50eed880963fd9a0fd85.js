@@ -16,12 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/pho-banner.jpg */ "./src/assets/pho-banner.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n.banner {\n    width: 100vw;\n    height: auto;\n}\n\nh1 {\n    position: fixed;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,QAAQ;;AAEZ;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,mBAAmB;IACnB,YAAY;IACZ,SAAS;;IAET,kBAAkB;IAClB,YAAY;IACZ,UAAU;IACV,yBAAyB;AAC7B;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mCAAmC;IACnC,iBAAiB;IACjB,iBAAiB;;IAEjB,YAAY;IACZ,YAAY;AAChB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n.banner {\n    width: 100vw;\n    height: auto;\n}\n\nh1 {\n    position: fixed;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n    grid-template-rows: 1fr 1fr;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n#header {\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n#content div:first-child { \n    display: grid;\n    place-items: start;\n    border: 1px solid red;\n\n    width: 50vw;\n    padding: 1rem 5rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,mDAA0C;IAC1C,4BAA4B;IAC5B,sBAAsB;IACtB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,kBAAkB;IAClB,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,QAAQ;;AAEZ;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,mBAAmB;IACnB,YAAY;IACZ,SAAS;;IAET,kBAAkB;IAClB,YAAY;IACZ,UAAU;IACV,yBAAyB;AAC7B;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mCAAmC;IACnC,iBAAiB;IACjB,iBAAiB;;IAEjB,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,qBAAqB;;IAErB,WAAW;IACX,kBAAkB;AACtB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nmain {\n    display: grid;\n    grid-template-rows: 1fr 1fr;\n}\n\n#content {\n    display: grid;\n    place-items: center;\n    order: 2;\n}\n\n#header {\n    background: url('./assets/pho-banner.jpg');\n    background-repeat: no-repeat;\n    background-size: cover;\n    width: 100vw;\n    min-height: 35vh;\n}\n\nh1 {\n    position: absolute;   \n    place-self: center;\n    color: white;\n}\n\n#header {\n    display: grid;\n    position: relative;\n    order: 1;\n\n}\n\n.nav-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    place-items: center;\n    color: white;\n    gap: 1rem;\n\n    position: absolute;\n    bottom: 1rem;\n    right: 50%;\n    transform: translate(50%);\n}\n\n#header button {\n    border: none;\n    border-radius: 10px;\n    color: white;\n    background-color: rgb(79, 212, 146);\n    font-weight: bold;\n    font-size: 1.2rem;\n\n    width: 10rem;\n    height: 5rem;\n}\n\n#content div:first-child { \n    display: grid;\n    place-items: start;\n    border: 1px solid red;\n\n    width: 50vw;\n    padding: 1rem 5rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -135,6 +140,44 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -543,19 +586,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/pho-banner.jpg */ "./src/assets/pho-banner.jpg");
 
 
-const headComponents = [];
+const headComponents = []; //components for header section
 const components = []; //components to add to page
 
 const welcome = document.createElement('h1');
 const nav = document.createElement('div');
-const banner = document.createElement('img');
+//const banner = document.createElement('img');
 const hero = document.createElement('div');
 
 
 welcome.innerHTML = 'Welcome to Pho Restaurant!'
 
-banner.src = _assets_pho_banner_jpg__WEBPACK_IMPORTED_MODULE_0__;
-banner.classList.add('banner');
+//banner.src = phoBanner;
 
 //nav-bar elements
 nav.classList.add('nav-bar');
@@ -571,9 +613,16 @@ nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
 
-hero.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+//Hero/About 
+const aboutHeader = document.createElement('h2');
+aboutHeader.innerHTML = 'ABOUT';
+const about = document.createElement('div');
+about.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+hero.appendChild(aboutHeader);
+hero.appendChild(about);
 
-headComponents.push(banner);
+//push components to respective arrays
+// headComponents.push(banner);
 headComponents.push(welcome);
 headComponents.push(nav);
 components.push(hero);
@@ -633,6 +682,9 @@ module.exports = __webpack_require__.p + "pho-banner.jpg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -707,6 +759,32 @@ module.exports = __webpack_require__.p + "pho-banner.jpg";
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"bundle": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -732,4 +810,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle74aa0259f35f246d5dac.js.map
+//# sourceMappingURL=bundle50eed880963fd9a0fd85.js.map
